@@ -1,0 +1,299 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 90px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,76%), transparent);
+    padding: 45px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo{
+	display: flex;
+}
+ul#menu {
+	list-style: none;
+	display: flex;
+}
+
+.menu-item a {
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	padding: 25px;
+}
+
+li.menu-item :hover{
+	background: #cc2c2c79;
+	border-radius: 15px;
+}
+nav{
+	display: flex;
+	align-items: center;
+}
+
+/* body */
+/*banner*/
+.banner {
+    width: 100%;
+    height: 70vh;
+    background: url('https://lumiere-a.akamaihd.net/v1/images/au_marvel_spiderman60th_hero_r_823e6bbf.jpeg?region=0,0,2400,1002') center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.h1-head{
+	color: #ffffff;
+    font-size: 80px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+.container{
+	width: 100%;
+    max-width: 122.5rem;
+    margin:  0 auto;
+    padding: 0 2.4rem;
+}
+.btn_banner{
+	border: 2px solid currentColor;
+	border-radius: 3rem;
+	color: rgb(255, 255, 255);
+	background-color: #bd2e2eaa;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 35px;
+	text-transform: uppercase;
+	font-weight: 100;
+	overflow: hidden;
+	padding: 1rem 2rem;
+	position: relative;
+	text-decoration: none;
+	transition: .2s transform ease-in-out;
+	will-change: transform;
+	z-index: 0;
+}
+.btn_banner::after{
+    background-color: #15629dc3;
+	color: #fff;
+    border-radius: 65px;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, 0) rotate(10deg);
+    transform-origin: top left;
+    transition: .2s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+}
+    
+.btn_banner:hover::after{
+    transform: translate(0, 0);
+}
+    
+.btn_banner:hover{
+    border: 2px solid transparent;
+    color: rgb(255, 255, 255);
+    transform: scale(1.05);
+    will-change: transform;
+}
+/* historia */
+
+.historia-info {
+    text-align: center;
+	display: flex;
+	margin-top: 100px;
+}
+
+h1{
+	color: #000000;
+    font-size: 80px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+
+h2{
+	font-family: 'Montserrat', sans-serif;
+	color: #cc2c2c;
+}
+p{
+	font-family: 'Montserrat', sans-serif;
+	line-height: 45px;
+	text-align: center;
+	margin: 52px;
+}
+/* contacto */
+.global-cont{
+	margin-top: 60px;
+}
+.contacto-info {
+    text-align: center;
+	display: flex;
+	flex-direction: row-reverse;
+	margin-top: 100px;
+	margin-bottom: 52px;
+}
+/*footer*/
+footer{
+	background-color: #15629d;
+	height: 250px;
+	padding: 2px;
+}
+.links{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.link-item{
+	padding-left: 70px;
+}
+
+/*------------------------- FORMULARIO ----------------------- */
+
+form {
+    padding: 37.5px;
+    margin: 50px;
+	margin-bottom: 100px;
+	font-family: 'Montserrat', Arial, sans-serif;
+	text-align: justify;
+}
+
+legend{
+    font-family: 'Montserrat', Arial, sans-serif;
+    text-transform: uppercase;
+	font-size: 30px;
+    letter-spacing: 5px;
+    text-align: center;
+	padding: 5px;
+}
+label{
+	padding-left: 30px;
+}
+fieldset{
+	border-color: #cc2c2c;
+}
+
+input[type='text'], [type='email'],[type='tel'], select, textarea {
+	background: none;
+    border: none;
+	border-bottom: solid 2px #cc2c2c;
+	color: #cc2c2c;
+	font-size: 1.000em;
+    font-weight: 400;
+    letter-spacing: 3px;
+	margin: 0em 0 1.875em 0;
+	padding: 0 0 0.875em 0;
+    text-transform: uppercase;
+	width: 90%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+textarea {
+	line-height: 150%;
+	height: 150px;
+	resize: none;
+    width: 100%;
+}
+
+/*------------------------- PELICULAS ----------------------- */
+.h1_pel{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding-top: 15px;
+
+}
+.pel-poster{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	margin-top: 10px;
+	
+}
+.pel-poster-ind:hover {
+	filter: opacity(.5);	
+}
+
+/* --------------------------- responisve */
+@media screen and (max-width: 480px)
+{
+	body{
+		width: 400px;
+	}
+	.banner
+	{
+		max-width: 412px;
+		height: 280px;
+	}
+	.h1-head
+	{
+		font-size: 140px;
+	}
+	.historia-info
+	{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	.img-nice
+	{
+		width: 540px;
+	}
+	h2
+	{
+		font-size: 50px;
+	}
+	.h1-his
+	{
+		font-size: 100px;
+	}
+	p
+	{
+		font-size: 35px;
+	}
+	.btn_banner
+	{
+		font-size: 60px;
+	}
+	.contacto-info
+	{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	footer{
+		height: 100px;
+	}
+	.p-footer{
+		font-size: 50px;
+	}
+}

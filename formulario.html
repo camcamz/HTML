@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contacto </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="archivos/cap.png"> 
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="logo">
+                <img src="archivos/logo.png" width="180px" id="logo">
+            </div>
+            <ul id="menu">
+                <li class="menu-item">
+                    <a href="index.html"> Inicio </a>
+                </li>
+                <li class="menu-item">
+                    <a href="peliculas.html"> Peliculas </a>
+                </li>
+                <li class="menu-item">
+                    <a href="series.html"> Series </a>
+                </li>
+                <li class="menu-item">
+                    <a href="formulario.html"> Contacto </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="banner">
+        <div class="container">
+            <h1 class="h1-head"> Contacto </h1>
+        </div>
+    </section>
+    <form action="mostrar-info" method="post" target="_blank"> 
+        <fieldset>
+            <legend>  Formulario  </legend>
+            <br>
+            <label for="nombre">
+                Nombre:
+            </label>
+            <input type="text" placeholder="Ingrese su nombre: " size="20" required> <br>
+            <br>
+            <label for="apellido">
+                Apellido:
+            </label>
+            <input type="text" placeholder="Ingrese su apellido: " size="20" required> <br>
+            <br>
+            <label for="direccion">
+                Direccion:
+            </label>
+            <input type="text" placeholder="Ingrese su dirección: " size="20" required> <br>
+            <br>
+            <label for="telefono">
+                Telefono
+            </label>
+            <input type="tel" placeholder="Ingrese su numero de telefono: " size="20" required> <br>
+            <br>
+            <label for="email">
+                Email:
+            </label>
+            <input type="email" placeholder="Ingrese su email: " size="20" required> <br>
+    
+        </fieldset>
+        <br>
+        <input type="submit" value="Enviar" class="btn_banner" style="float: right;">
+    </form>
+</body>
+<footer>    
+    <p class="p-footer"> Hecho con amor, paciencia y compañeros incopentes que no hicieron nada mas que clavar visto en wpp.</p>
+    <br>
+    <section class="links">
+        <a class="link-item" href="https://www.instagram.com/marvellatam/"> <img src="archivos/instagram.png" width="50px"> </a>
+        <a class="link-item" href="https://twitter.com/MarvelLATAM"> <img src="archivos/twitter.png" width="50px"> </a>
+        <a class="link-item" href="https://github.com/camcamz"> <img src="archivos/github.png" width="50px"> </a>
+    </section>
+</footer>
+</html>
