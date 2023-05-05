@@ -200,7 +200,7 @@ input[type='text'], [type='email'],[type='tel'], select, textarea {
 	font-size: 1.000em;
     font-weight: 400;
     letter-spacing: 3px;
-	margin: 0em 0 1.875em 0;
+	margin: 0em 0 1.875em 0.5rem;
 	padding: 0 0 0.875em 0;
     text-transform: uppercase;
 	width: 90%;
@@ -214,8 +214,8 @@ input[type='text'], [type='email'],[type='tel'], select, textarea {
 	-ms-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
+	outline: none;
 }
-
 textarea {
 	line-height: 150%;
 	height: 150px;
@@ -243,6 +243,56 @@ textarea {
 	filter: opacity(.5);	
 }
 
+/*------------------------- SERIES ----------------------- */
+#series{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 20px;
+
+}
+.one_serie{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 350px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.serie_img{
+	width: 100%;
+    max-height: 320px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.serie_img img{
+	width: 100%;
+}
+.serie-info{
+	text-align: center;
+}
+.serie-info button{
+	padding: 10px 15px;
+	border: none;
+	border-radius: 5px;
+	background-color: #cc2c2c;
+	color: #fff;
+	font-size: 1.000em;
+	font-weight: 400;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	cursor: pointer;
+	outline: none;
+}
+.serie-info button a{
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+}
 /* --------------------------- responisve */
 @media screen and (max-width: 480px)
 {
