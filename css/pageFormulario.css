@@ -1,0 +1,55 @@
+/*------------------------- FORMULARIO ----------------------- */
+
+form {
+    padding: 37.5px;
+    margin: 50px;
+	margin-bottom: 100px;
+	font-family: 'Montserrat', Arial, sans-serif;
+	text-align: justify;
+}
+
+legend{
+    font-family: 'Montserrat', Arial, sans-serif;
+    text-transform: uppercase;
+	font-size: 30px;
+    letter-spacing: 5px;
+    text-align: center;
+	padding: 5px;
+}
+label{
+	padding-left: 30px;
+}
+fieldset{
+	border-color: #cc2c2c;
+}
+
+input[type='text'], [type='email'],[type='tel'], select, textarea {
+	background: none;
+    border: none;
+	border-bottom: solid 2px #cc2c2c;
+	color: #cc2c2c;
+	font-size: 1.000em;
+    font-weight: 400;
+    letter-spacing: 3px;
+	margin: 0em 0 1.875em 0.5rem;
+	padding: 0 0 0.875em 0;
+    text-transform: uppercase;
+	width: 90%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	outline: none;
+}
+textarea {
+	line-height: 150%;
+	height: 150px;
+	resize: none;
+    width: 100%;
+}

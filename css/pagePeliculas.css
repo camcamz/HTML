@@ -1,0 +1,19 @@
+/*------------------------- PELICULAS ----------------------- */
+.h1_pel{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding-top: 15px;
+
+}
+.pel-poster{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	margin-top: 10px;
+	
+}
+.pel-poster-ind:hover {
+	filter: opacity(.5);	
+}
