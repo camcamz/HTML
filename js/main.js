@@ -5,22 +5,22 @@ const API_URL = 'https://gateway.marvel.com:443/v1/public/series?ts=1&apikey=233
 fetch(API_URL)
         .then(res=>res.json())
         .then(json=>{
-            const series = json.data.results;
-                const allSeries = document.getElementById('series');
-                series.forEach((serie) => {
-                        const serieElement = document.createElement('div');
-                        
-                        serieElement.classList.add('one_serie');
-                        serieElement.innerHTML = `
-                                <div class="serie_img">
-                                        <img src="${serie.thumbnail.path}.${serie.thumbnail.extension}" alt="${serie.title}">
-                                </div>
-                                <div class="serie-info">
-                                        <h3 class="serie-title">${serie.title}</h3>
-                                        <p class="serie-overview">${serie.description}</p>
-                                        <button><a href=${serie.urls.url}>Mas información</a></button>
-                                </div>
-                        `;
-                        allSeries.appendChild(serieElement);
-                });
+                const series = json.data.results;
+                        const allSeries = document.getElementById('series');
+                        series.forEach((serie) => {
+                                const serieElement = document.createElement('div');
+                                
+                                serieElement.classList.add('one_serie');
+                                serieElement.innerHTML = `
+                                        <div class="serie_img">
+                                                <img src="${serie.thumbnail.path}.${serie.thumbnail.extension}" alt="${serie.title}">
+                                        </div>
+                                        <div class="serie-info">
+                                                <h3 class="serie-title">${serie.title}</h3>
+                                                <p class="serie-overview">${serie.description}</p>
+                                                <button><a href=${serie.urls.url}>Mas información</a></button>
+                                        </div>
+                                `;
+                                allSeries.appendChild(serieElement);
+                        });
         });
