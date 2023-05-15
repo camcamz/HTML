@@ -36,34 +36,34 @@
             <h1 class="h1-head"> Contacto </h1>
         </div>
     </section>
-    <form action="mostrar-info" method="post" target="_blank"> 
+    <form id="form"  autocomplete="off"> 
         <fieldset>
             <legend>  Formulario  </legend>
             <br>
             <label for="nombre">
                 Nombre: 
             </label>
-            <input type="text" placeholder=" Ingrese su nombre" size="20" required> <br>
+            <input type="text" name="nombre" id="nombre" placeholder=" Ingrese su nombre" size="20" autocomplete="off"> <br>
             <br>
             <label for="apellido">
                 Apellido: 
             </label>
-            <input type="text" placeholder=" Ingrese su apellido" size="20" required> <br>
+            <input type="text" name="apellido" id="apellido" placeholder=" Ingrese su apellido" size="20" autocomplete="off"> <br>
             <br>
             <label for="direccion">
                 Direccion: 
             </label>
-            <input type="text" placeholder=" Ingrese su dirección" size="20" required> <br>
+            <input type="text" name="direccion" id="direccion" placeholder=" Ingrese su dirección" size="20" autocomplete="off"> <br>
             <br>
             <label for="telefono">
                 Telefono: 
             </label>
-            <input type="tel" placeholder=" Ingrese su numero de telefono" size="20" required> <br>
+            <input type="tel" name="telefono" id="telefono" placeholder=" Ingrese su numero de telefono" size="20" autocomplete="off"> <br>
             <br>
             <label for="email">
                 Email: 
             </label>
-            <input type="email" placeholder=" Ingrese su email" size="20" required> <br>
+            <input type="email" name="email" id="email" placeholder=" Ingrese su email" size="20" autocomplete="off"> <br>
     
         </fieldset>
         <br>
@@ -91,4 +91,6 @@
         </div>
     </section>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/js/validate.js"></script>
 </html>
