@@ -130,11 +130,11 @@ footer{
 	font-family: 'Montserrat', sans-serif;
 	color: #cc2c2c;
 	font-size: 2rem;
-   }
+}
 .footer-info span{
- font-size: 1.1rem;
- color: #fff;
- font-weight: 100;
+	font-size: 1.1rem;
+	color: #fff;
+	font-weight: 100;
 }
 .copyright{
 	display: flex;
