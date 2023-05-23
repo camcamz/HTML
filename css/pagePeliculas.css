@@ -23,3 +23,10 @@
 	justify-content: center;
 	flex-direction: column;
 }
+.container h2{
+	font-size: 4rem;
+	margin-top: 2rem;
+}
+.container p{
+	font-size: 20px;
+}

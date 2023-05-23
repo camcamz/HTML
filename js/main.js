@@ -18,7 +18,7 @@ fetch(API_URL)
                                         <div class="serie-info">
                                                 <h3 class="serie-title">${serie.title}</h3>
                                                 <p class="serie-overview">${serie.description}</p>
-                                                <button><a href=${serie.urls.url}>Mas información</a></button>
+                                                <button><a href='#'>Mas información</a></button>
                                         </div>
                                 `;
                                 allSeries.appendChild(serieElement);

@@ -48,3 +48,10 @@
 	text-decoration: none;
 	text-align: center;
 }
+.serie-title{
+	padding: 5px;
+	font-size: 20px;
+}
+.serie-overview{
+	padding: 5px;
+}
