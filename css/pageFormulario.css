@@ -53,3 +53,25 @@ textarea {
 	resize: none;
     width: 100%;
 }
+
+/*------------------------- RESPONSIVE FORMULARIO ----------------------- */
+
+@media screen and (max-width: 460px){
+	form {
+		padding: 37.5px;
+		margin: 0;
+		margin-bottom: 100px;
+	}
+	legend{
+		font-size: 25px;
+	}
+	label{
+		padding-left: 20px;
+	}
+	input[type='text'], [type='email'],[type='tel'], select, textarea {
+		font-size: .9em;
+	}	
+	.btn_banner{
+		font-size: 20px;
+	}
+}

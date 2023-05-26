@@ -14,9 +14,15 @@ h1{
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-weight: 900;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
 }
-
+.img-nice-1{
+	width: 600px;
+}
+.img-nice-2{
+	width: 600px;
+	height: auto;
+}
 h2{
 	font-family: 'Montserrat', sans-serif;
 	color: #cc2c2c;
@@ -25,7 +31,7 @@ p{
 	font-family: 'Montserrat', sans-serif;
 	line-height: 45px;
 	text-align: center;
-	margin: 52px;
+	margin: 50px;
 }
 /* contacto */
 .global-cont{
@@ -37,4 +43,80 @@ p{
 	flex-direction: row-reverse;
 	margin-top: 100px;
 	margin-bottom: 52px;
+}
+
+/*------------------------- RESPONSIVE INDEX ----------------------- */
+
+@media screen and (max-width: 1150px){
+	h1{
+		font-size: 50px;
+	}
+	p{
+		line-height: 35px;
+		margin: 45px;
+	}
+	.img-nice-1{
+		width: 500px;
+	}
+	.img-nice-2{
+		width: 550px;
+	}
+}
+@media screen and (max-width: 940px){
+	.container{
+		padding: 0 2rem;
+	}
+	.img-nice-1{
+		width: 450px;
+	}
+	.img-nice-2{
+		width: 450px;
+	}
+	p{
+		line-height: 30px;
+		margin: 40px;
+	}
+	.btn_banner{
+		font-size: 20px;
+	}
+}
+@media screen and (max-width: 800px){
+	.container{
+		padding: 0 1.5rem;
+	}
+	.img-nice-1{
+		width: 400px;
+	}
+	.img-nice-2{
+		width: 400px;
+	}
+	h1{
+		font-size: 45px;
+	}
+	p{
+		margin: 35px;
+	}
+}
+@media screen and (max-width: 700px){
+	.img-nice-1{
+		width: 300px;
+	}
+	.img-nice-2{
+		width: 300px;
+	}
+	h1{
+		font-size: 40px;
+	}
+	p{
+		margin: 30px;
+	}
+}
+@media screen and (max-width: 700px){
+	.historia-info {
+		flex-direction: column;
+	}
+	.contacto-info {
+		flex-direction: column;
+	}
+
 }

@@ -65,7 +65,6 @@ nav{
 }
 .container{
 	width: 100%;
-    max-width: 122.5rem;
     margin:  0 auto;
     padding: 0 2.4rem;
 }
@@ -161,57 +160,45 @@ footer{
 	color: #bd2e2e;
 }
 /*------------------------- RESPONSIVE HEADER-FOOTER ----------------------- */
-/*
-@media screen and (max-width: 480px)
-{
-	body{
-		width: 400px;
-	}
-	.banner
-	{
-		max-width: 412px;
-		height: 280px;
-	}
-	.h1-head
-	{
-		font-size: 140px;
-	}
-	.historia-info
-	{
-		display: flex;
-		flex-wrap: wrap;
+
+@media screen and (max-width: 650px){
+	/* HEADER */
+	.nav{
 		flex-direction: column;
 	}
-	.img-nice
-	{
-		width: 540px;
-	}
-	h2
-	{
+	.h1-head{
 		font-size: 50px;
 	}
-	.h1-his
-	{
-		font-size: 100px;
+	.menu-item a {
+		color: rgb(255, 255, 255);
+		padding: 5px 15px;
 	}
-	p
-	{
-		font-size: 35px;
+	header {
+		height: 180px;
+		background-image: linear-gradient(to bottom, rgba(0,0,0,76%), transparent);
+		padding:  0 35px;
 	}
-	.btn_banner
-	{
-		font-size: 60px;
+	#logo{
+		height: auto;
+		width: 110px;
+		margin-top: -50px;
 	}
-	.contacto-info
-	{
-		display: flex;
-		flex-wrap: wrap;
+}
+
+@media screen and (max-width: 460px){
+	/* HEADER */
+	.h1-head{
+		font-size: 40px;
+	}
+	/* FOOTER */
+	.footer{
 		flex-direction: column;
 	}
-	footer{
-		height: 100px;
+	.copyright{
+		display: none ;
 	}
-	.p-footer{
-		font-size: 50px;
+	.footer-info{
+		width: 100%;
+		padding: 20px;
 	}
-} */
+}
