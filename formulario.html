@@ -1,96 +1,141 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Contacto </title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/pageFormulario.css">
-    <link rel="shortcut icon" href="archivos/cap.png"> 
-</head>
-<body>
-    <header>
-        <nav class="nav">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Contacto</title>
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="css/pageFormulario.css" />
+      <link rel="shortcut icon" href="archivos/cap.png" />
+   </head>
+   <body>
+      <header>
+         <nav class="nav">
             <div class="logo">
-                <img src="archivos/logo.png" width="180px" id="logo">
+               <img src="archivos/logo.png" width="180px" id="logo" />
             </div>
             <ul id="menu">
-                <li class="menu-item">
-                    <a href="index.html"> Inicio </a>
-                </li>
-                <li class="menu-item">
-                    <a href="peliculas.html"> Peliculas </a>
-                </li>
-                <li class="menu-item">
-                    <a href="series.html"> Series </a>
-                </li>
-                <li class="menu-item">
-                    <a href="formulario.html"> Contacto </a>
-                </li>
+               <li class="menu-item">
+                  <a href="index.html"> Inicio </a>
+               </li>
+               <li class="menu-item">
+                  <a href="peliculas.html"> Peliculas </a>
+               </li>
+               <li class="menu-item">
+                  <a href="series.html"> Series </a>
+               </li>
+               <li class="menu-item">
+                  <a href="formulario.html"> Contacto </a>
+               </li>
             </ul>
-        </nav>
-    </header>
-    <section class="banner">
-        <div class="container">
-            <h1 class="h1-head"> Contacto </h1>
-        </div>
-    </section>
-    <form id="form"  autocomplete="off"> 
-        <fieldset>
-            <legend>  Formulario  </legend>
-            <br>
-            <label for="nombre">
-                Nombre: 
-            </label>
-            <input type="text" name="nombre" id="nombre" placeholder=" Ingrese su nombre" size="20" autocomplete="off"> <br>
-            <br>
-            <label for="apellido">
-                Apellido: 
-            </label>
-            <input type="text" name="apellido" id="apellido" placeholder=" Ingrese su apellido" size="20" autocomplete="off"> <br>
-            <br>
-            <label for="direccion">
-                Direccion: 
-            </label>
-            <input type="text" name="direccion" id="direccion" placeholder=" Ingrese su dirección" size="20" autocomplete="off"> <br>
-            <br>
-            <label for="telefono">
-                Telefono: 
-            </label>
-            <input type="tel" name="telefono" id="telefono" placeholder=" Ingrese su numero de telefono" size="20" autocomplete="off"> <br>
-            <br>
-            <label for="email">
-                Email: 
-            </label>
-            <input type="email" name="email" id="email" placeholder=" Ingrese su email" size="20" autocomplete="off"> <br>
-    
-        </fieldset>
-        <br>
-        <input type="submit" value="Enviar" class="btn_banner" style="float: right;">
-    </form>
-</body>
-<footer>
-    <section class="footer">
-        <div class="footer-info">
-            <h2> Marvel Wiki </h2>
-            <span> 
-                Esta pagina fue creada con el fin de informar a los fanaticos de Marvel sobre las peliculas y series que se estrenaron y se estrenaran en el futuro. 
+         </nav>
+      </header>
+      <section class="banner">
+         <div class="container">
+            <h1 class="h1-head">Contacto</h1>
+         </div>
+      </section>
+      <form id="form" autocomplete="off">
+         <fieldset>
+            <legend>Formulario</legend>
+            <br />
+            <label for="nombre"> Nombre: </label>
+            <input
+               type="text"
+               name="nombre"
+               id="nombre"
+               placeholder=" Ingrese su nombre"
+               size="20"
+               autocomplete="off"
+            />
+            <br />
+            <br />
+            <label for="apellido"> Apellido: </label>
+            <input
+               type="text"
+               name="apellido"
+               id="apellido"
+               placeholder=" Ingrese su apellido"
+               size="20"
+               autocomplete="off"
+            />
+            <br />
+            <br />
+            <label for="direccion"> Direccion: </label>
+            <input
+               type="text"
+               name="direccion"
+               id="direccion"
+               placeholder=" Ingrese su dirección"
+               size="20"
+               autocomplete="off"
+            />
+            <br />
+            <br />
+            <label for="telefono"> Telefono: </label>
+            <input
+               type="tel"
+               name="telefono"
+               id="telefono"
+               placeholder=" Ingrese su numero de telefono"
+               size="20"
+               autocomplete="off"
+            />
+            <br />
+            <br />
+            <label for="email"> Email: </label>
+            <input
+               type="email"
+               name="email"
+               id="email"
+               placeholder=" Ingrese su email"
+               size="20"
+               autocomplete="off"
+            />
+            <br />
+         </fieldset>
+         <br />
+         <input
+            type="submit"
+            value="Enviar"
+            class="btn_banner"
+            style="float: right"
+         />
+      </form>
+   </body>
+   <footer>
+      <section class="footer">
+         <div class="footer-info">
+            <h2>Marvel Wiki</h2>
+            <span>
+               Esta pagina fue creada con el fin de informar a los fanaticos de
+               Marvel sobre las peliculas y series que se estrenaron y se
+               estrenaran en el futuro.
             </span>
-        </div>
-        <div class="copyright">
+         </div>
+         <div class="copyright">
             <span>© Copyright Marvel 2023</span>
-        </div>
-        <div class="footer-contact">
-            <h2> Redes Sociales </h2>
+         </div>
+         <div class="footer-contact">
+            <h2>Redes Sociales</h2>
             <section class="links">
-                <a class="link-item" href="https://www.instagram.com/marvellatam/"> <img src="archivos/instagram.png" width="40px"> </a>
-                <a class="link-item" href="https://twitter.com/MarvelLATAM"> <img src="archivos/twitter.png" width="40px"> </a>
-                <a class="link-item" href="https://www.marvel.com/"> <img src="archivos/internet.png" width="40px"> </a>
+               <a
+                  class="link-item"
+                  href="https://www.instagram.com/marvellatam/"
+               >
+                  <img src="archivos/instagram.png" width="40px" />
+               </a>
+               <a class="link-item" href="https://twitter.com/MarvelLATAM">
+                  <img src="archivos/twitter.png" width="40px" />
+               </a>
+               <a class="link-item" href="https://www.marvel.com/">
+                  <img src="archivos/internet.png" width="40px" />
+               </a>
             </section>
-        </div>
-    </section>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="/js/validate.js"></script>
+         </div>
+      </section>
+   </footer>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <script src="/js/validate.js"></script>
 </html>
