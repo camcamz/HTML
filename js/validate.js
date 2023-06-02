@@ -42,6 +42,13 @@ form.addEventListener("submit", (e) => {
          icon: "warning",
          confirmButtonText: "Reintentar",
       });
+   } else if (apellido.length < 3 || nombre.length < 3) {
+      Swal.fire({
+         title: "Cuidado !",
+         text: "El nombre y el apellido tienen que tener mas de 3 caracteres",
+         icon: "warning",
+         confirmButtonText: "Reintentar",
+      });
    } else if (!regName.test(nombre) || !regName.test(apellido)) {
       Swal.fire({
          title: "Cuidado !",
